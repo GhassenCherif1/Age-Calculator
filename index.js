@@ -41,14 +41,14 @@ function calculateAge(an, mois, jour) {
 
 
 bouton.addEventListener("click",()=>{
-  if(Number.isInteger(Number(month.value)) == false || Number(month.value) < 1 || Number(month.value) > 12 || Number.isInteger(Number(year.value)) == false || Number(year.value) < 1 || Number.isInteger(Number(day.value)) == false || Number(day.value) < 1 || Number(day.value) > 31 ){
+  if(Number.isInteger(Number(month.value)) == false || Number(month.value) < 1 || Number(month.value) > 12 || Number.isInteger(Number(year.value)) == false || Number(year.value) < 1900 || Number.isInteger(Number(day.value)) == false || Number(day.value) < 1 || Number(day.value) > 31 ){
     if(Number.isInteger(Number(month.value)) == false || Number(month.value) < 1 || Number(month.value) > 12  ){
       labels[1].classList.add("false");
     }
     else{
       labels[1].classList.remove("false");
     }
-    if(Number.isInteger(Number(year.value)) == false || Number(year.value) < 1  ){
+    if(Number.isInteger(Number(year.value)) == false || Number(year.value) < 1900  ){
       labels[2].classList.add("false");
     }
     else{
